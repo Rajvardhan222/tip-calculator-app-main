@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style-output.css" />
+    <script type="module" src="script.js" defer></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-space-mono ">
+    <div class=" bg-grey-200 w-screen h-screen">
+      <div
+        class=" text-center py-10 text-2xl text-gray-600 font-semibold uppercase tracking-[0.8rem] "
+      >
+        <p>spli</p>
+        <p>tter</p>
+      </div>
+      <div class="bg-white rounded-4xl px-8 py-5 rounded-b-none lg:flex lg:gap-10 lg:rounded-b-4xl lg:mx-auto  max-w-248   ">
+       <div class="lg:flex-1">
+         <label class="block font-bold text-section-header" for="calculate"
+          >Bill</label
+        >
+        <div class="relative mb-5 mt-2">
+          <img
+            src="./images/icon-dollar.svg"
+            class="absolute left-3 top-[0.7rem]"
+            alt=""
+            srcset=""
+          />
+          <input
+            class="input"
+            max="999999999999"
+            type="number"
+            placeholder="0"
+            name="calculate"
+            id="calculate"
+          />
+        </div>
+        <div>
+          <p class="text-section-header">Select Tip %</p>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3 my-4">
+            <p class="select-tip-tag">5%</p>
+            <p class="select-tip-tag">10%</p>
+            <p class="select-tip-tag">15%</p>
+            <p class="select-tip-tag">25%</p>
+            <p class="select-tip-tag">50%</p>
+            <p class="select-tip-custom">Custom</p>
+          </div>
+        </div>
+
+        <label class="block font-bold text-section-header" for="calculate"
+          >Number of People</label
+        >
+        <div class="relative mt-2">
+          <img
+            src="./images/icon-person.svg"
+            class="absolute left-3 top-[0.7rem]"
+            alt=""
+            srcset=""
+          />
+          <input
+            class="input"
+            max="999999999999"
+            placeholder="0"
+            type="number"
+            name="calculate"
+            id="calculate"
+          />
+        </div>
+       </div>
+
+        <div
+          class="bg-green-900 mt-5 py-7 px-5 rounded-[0.8rem] flex flex-col gap-5 lg:flex-1"
+        >
+          <div class="summary-amount">
+            <div class="summary">
+              <p class="text-white font-bold">Tip Amount</p>
+              <p class="text-[0.8rem] text-gray-400">/ person</p>
+            </div>
+
+            <div class="amount"><p>$4.25</p></div>
+          </div>
+          <div class="summary-amount">
+            <div class="summary">
+              <p class="text-white font-bold">Total</p>
+              <p class="text-[0.8rem] text-gray-400">/ person</p>
+            </div>
+
+            <div class="amount"><p>$32.79</p></div>
+          </div>
+          <button class="selected">RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
